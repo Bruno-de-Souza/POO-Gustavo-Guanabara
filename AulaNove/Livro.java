@@ -86,13 +86,9 @@ public class Livro implements Publicacao {
         this.aberto = false;
     }
 
-    //@Override
-    public void folhear(int p) {
-        if(p > this.totalPaginas){
-            this.paginaAtual = 0;
-        } else {
-            this.paginaAtual = p; 
-        }
+    @Override
+    public void folhear() {
+        this.paginaAtual = 0;
     }
 
     @Override

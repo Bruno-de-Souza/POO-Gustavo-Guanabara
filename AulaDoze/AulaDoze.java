@@ -10,7 +10,9 @@ public class AulaDoze {
         Cachorro cho = new Cachorro();
         GoldFish gf = new GoldFish();
         Tartaruga ta = new Tartaruga();
-
+        Peixe p = new Peixe();
+        
+        m.locomover();
         ca.locomover();
         ca.usarBolsa();
         ara.locomover();
@@ -18,5 +20,8 @@ public class AulaDoze {
         gf.locomover();
         r.locomover();
         ta.locomover();
+        ara.locomover();
+        a.locomover();
+        p.locomover();
     }
 }

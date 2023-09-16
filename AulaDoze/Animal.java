@@ -1,9 +1,9 @@
 package AulaDoze;
 
 public abstract class Animal {
-    private float peso;
-    private int idade;
-    private int membros;
+    protected float peso;
+    protected int idade;
+    protected int membros;
 
     public abstract void locomover();
     public abstract void alimentar();

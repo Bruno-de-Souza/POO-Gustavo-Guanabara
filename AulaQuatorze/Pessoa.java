@@ -4,17 +4,17 @@ public class Pessoa {
     private String nome;
     private int idade;
     private String sexo;
-    private int experiencia;
+    private float experiencia;
 
     public void gaharaExperiencia() {
         this.setExperiencia(experiencia + 1);
     }
 
-    public Pessoa(String nome, int idade, String sexo, int experiencia) {
+    public Pessoa(String nome, int idade, String sexo) {
         this.setNome(nome);
         this.setIdade(idade);
         this.setSexo(sexo);
-        this.setExperiencia(experiencia);
+        this.experiencia = 0;
     }
 
     public String getNome() {
@@ -44,12 +44,22 @@ public class Pessoa {
         return sexo;
     }
 
-    public int getExperiencia() {
+    public float getExperiencia() {
         return this.experiencia;
     }
 
-    public int setExperiencia(int experiencia) {
+    public float setExperiencia(float experiencia) {
         this.experiencia = experiencia;
         return experiencia;
+    }
+
+    @Override
+    public String toString() {
+        return " Pessoa { " +
+            " nome = '" + getNome() + "'" +
+            ", idade = '" + getIdade() + "'" +
+            ", sexo = '" + getSexo() + "'" +
+            ", experiencia = '" + getExperiencia() + "'" +
+            " } ";
     }
 }

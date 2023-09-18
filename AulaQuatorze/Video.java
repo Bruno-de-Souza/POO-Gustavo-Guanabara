@@ -7,17 +7,25 @@ public class Video implements AcoesVideo {
     protected int curtidads;
     protected boolean reproduzindo;
 
+    public Video(String titulo) {
+        this.titulo = titulo;
+        this.avaliacao = 1;
+        this.views = 0;
+        this.curtidads = 0;
+        this.reproduzindo = false;
+    }   
+
     @Override
     public void play() {
-
+        this.reproduzindo = true;
     }
     @Override
     public void pause() {
-
+        this.reproduzindo = false;
     }
     @Override
     public void like() {
-
+        this.curtidads ++ ;
     }
 
     public String getTitulo() {
@@ -63,5 +71,10 @@ public class Video implements AcoesVideo {
     public boolean setReproduzindo(Boolean reproduzindo) {
         this.reproduzindo = reproduzindo;
         return this.reproduzindo;
+    }
+
+    @Override
+    public String toString() {
+        return "Video { " + "Titulo = " + titulo + ", Avaliacao = " + avaliacao + ", Views = " + views + ", Curtidas = " + curtidads + ", Reproduzindo = " + reproduzindo + " }";
     }
 }

@@ -1,11 +1,11 @@
 package AulaQuatorze;
 
-public class Gafanhato extends Pessoa {
+public class Gafanhoto extends Pessoa {
 
     private String login;
     private int totalAssistido;
 
-    public Gafanhato(String nome, int idade, String sexo, String login) {
+    public Gafanhoto(String nome, int idade, String sexo, String login) {
         super(nome, idade, sexo);
         this.setLogin(login);
         this.totalAssistido = 0;
@@ -35,8 +35,8 @@ public class Gafanhato extends Pessoa {
 
     @Override
     public String toString() {
-        return " Gafanhoto { " + super.toString() +
-            ", \n login = '" + getLogin() + "'" +
+        return "Gafanhoto { " + super.toString() +
+            ", \nlogin = '" + getLogin() + "'" +
             ", totalAssistido = '" + getTotalAssistido() + "'" +
             " } ";
     }
